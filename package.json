@@ -1,0 +1,61 @@
+{
+  "name": "inviona-project1",
+  "version": "1.0.0",
+  "dependencies": {
+    "@cap-js/hana": "^2",
+    "@sap/cds": "^9.9.2",
+    "@sap/xssec": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/cds-test": "^1.0.1",
+    "@cap-js/sqlite": "^2.4",
+    "@sap/cds-dk": "^9",
+    "cds-plugin-ui5": "^0.17.0",
+    "jest": "^30.4.2"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-visits": "cds watch --open clinic.app.visits/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-doctors": "cds watch --open doctors/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-patients": "cds watch --open patients/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "test": "npx jest"
+  },
+  "private": true,
+  "cds": {
+    "requires": {
+      "[development]": {
+        "auth": {
+          "kind": "mocked",
+          "users": {
+            "alice": {
+              "roles": [
+                "viewer"
+              ]
+            },
+            "admin": {
+              "roles": [
+                "admin",
+                "viewer"
+              ]
+            }
+          }
+        }
+      },
+      "[production]": {
+        "auth": "xsuaa",
+        "db": "hana"
+      },
+      "destinations": true,
+      "html5-repo": true,
+      "workzone": true
+    }
+  },
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/visits",
+    "app/doctors",
+    "app/patients"
+  ]
+}

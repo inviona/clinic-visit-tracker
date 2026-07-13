@@ -1,0 +1,6 @@
+ID,firstName,lastName,dateOfBirth,email,phone,bloodType
+7a1e0001-1111-4a01-9001-000000000001,Arta,Krasniqi,1988-03-14,arta.krasniqi@mail.com,+355691234501,A+
+7a1e0001-1111-4a01-9001-000000000002,Blerim,Hoxha,1975-11-02,blerim.hoxha@mail.com,+355691234502,O-
+7a1e0001-1111-4a01-9001-000000000003,Elira,Shala,1992-07-25,elira.shala@mail.com,+355691234503,B+
+7a1e0001-1111-4a01-9001-000000000004,Genti,Berisha,1969-01-30,genti.berisha@mail.com,+355691234504,AB+
+7a1e0001-1111-4a01-9001-000000000005,Mira,Dervishi,2001-09-08,mira.dervishi@mail.com,+355691234505,O+
