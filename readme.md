@@ -20,3 +20,7 @@ File or Folder | Purpose
 ## Learn More
 
 Learn more at <https://cap.cloud.sap>.
+
+## CI/CD Test
+
+Testing automatic pipeline trigger.
